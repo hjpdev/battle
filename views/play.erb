@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h2>
+    <%= @game.player1.name %> vs. <%= @game.player2.name %>
+  </h2>
+  <h3>
+  <%= @game.player1.name %>: <%= @game.player1.hit_points %>HP
+  <br>
+  <%= @game.player2.name %>: <%= @game.player2.hit_points %>HP
+  </h3>
+  <br>
+  <h2>
+  <b><%= @game.current_turn.name %>'s turn.</b>
+  </h2>
+  <br>
+  <form action="/attack" method="post">
+    <input type="submit" value="Standard Attack">
+  </form>
+  <form action="/weak_attack" method="post">
+    <input type="submit" value="Weak Attack">
+  </form>
+  <form action="/heavy_attack" method="post">
+    <input type="submit" value="Heavy Attack">
+  </form>
+</body>

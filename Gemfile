@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+# gem 'sinatra'
+gem 'shotgun'
+gem 'capybara'
+gem 'chromedriver-helper'
+gem 'selenium-webdriver'
+# gem 'sinatra-base'
+gem 'rack'
+gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
